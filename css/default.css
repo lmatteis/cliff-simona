@@ -1,7 +1,30 @@
 
 body{}
 
-#rt-logo{background: url(../images/logo.png) left top no-repeat; display: block;}
+#logo-block {
+border-bottom: 1px solid #fff;
+padding-bottom: 5px;
+}
+.sublogo {
+    color: #848388;
+font-style: italic;
+font-size: 17px;
+margin-top: 6px;
+}
+#rt-logo{
+    text-decoration: none; 
+    font-family: Vidaloka;
+}
+
+.logo-text {
+    font-size: 40px;
+    line-height: 30px;
+    color: #fff;
+    font-weight: 100;
+}
+.logo-text span {
+    color: #848388;
+}
 
 h1, h2, h3, h4, h5, h6{margin:0;font-style:normal;font-weight:normal;font-family: 'Vidaloka', serif;text-transform:uppercase;color:#57555d;}
 
