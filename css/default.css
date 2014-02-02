@@ -1,0 +1,580 @@
+
+body{}
+
+#rt-logo{background: url(../images/logo.png) left top no-repeat; display: block;}
+
+h1, h2, h3, h4, h5, h6{margin:0;font-style:normal;font-weight:normal;font-family: 'Vidaloka', serif;text-transform:uppercase;color:#57555d;}
+
+/* === CATEGORY VIEW ===*/
+
+div.itemListView{}
+
+	/*Category block*/
+	div.itemListCategoriesBlock{}
+		div.itemListCategory{}
+			div.itemListCategory img{float:left; margin: 0 1em 1em 0;}
+			div.itemListCategory h2{}
+			div.itemListCategory p{}
+		div.itemListSubCategories{}
+			div.subCategoryContainer{float:left;}
+				div.subCategory{}
+					div.subCategory a.subCategoryImage{float:left; margin: 0 1em 1em 0;}
+
+	/*Items list*/
+	div.itemList{}
+		div.K2ItemsRow{clear: both}
+		#blog div.K2ItemsRow{margin:0 0 30px;}
+			div.itemContainer{float:left;}
+			div.itemContainer.itemContainerLast{}
+				div.catItemView{}
+					div.catItemHeader{}
+					#blog div.catItemHeader,div.itemHeader,div.userItemHeader{margin:0 0 6px;}
+						h3.catItemTitle,h2.itemTitle,h3.userItemTitle{font-style:normal;color:#57555d;text-transform:uppercase;margin:0 0 9px;font-weight:normal;font-family: 'Vidaloka', serif;font-size:13px;line-height:22px;}
+						h3.catItemTitle a,h3.userItemTitle a{text-decoration:none;color:inherit;}
+						h3.catItemTitle a:hover,h3.userItemTitle a:hover{text-decoration:underline;}
+						span.catItemAuthor,span.itemAuthor{background:url(../images/author.png) 0 50% no-repeat;padding:0 5px 0 20px;}
+						span.catItemAuthor a,span.itemAuthor a{color:#98979a;text-decoration:none;}
+						span.catItemAuthor a:hover,span.itemAuthor a:hover{text-decoration:underline;}
+						span.catItemDateCreated,span.itemDateCreated,span.userItemDateCreated{background:url(../images/date.png) 0 50% no-repeat;padding:0 5px 0 18px}
+
+					div.catItemRatingBlock{}
+
+					div.catItemBody{}
+					#blog div.catItemBody{overflow:hidden;}
+						div.catItemImageBlock{}
+						#blog div.catItemImageBlock{float:left;margin:0 19px 0 0;}
+							span.catItemImage{display:inline-block;}
+								span.catItemImage a{display:inline-block;}
+									span.catItemImage a img{}
+						div.catItemIntroText{overflow:hidden;}
+						#port div.catItemIntroText{padding:0 10px 0 0;}
+							div.catItemReadMore{}
+						div.catItemExtraFields{}
+							div.catItemExtraFields h4{}
+							div.catItemExtraFields ul{margin: 0}
+								div.catItemExtraFields ul li{}
+									span.catItemExtraFieldsLabel{}
+									span.catItemExtraFieldsValue{}
+
+					div.catItemLinks{}
+						div.catItemCategory{}
+					div.catItemCommentsLink,div.itemCommentsLink,div.userItemCommentsLink{display:inline;background:url(../images/comments.png) 0 50% no-repeat;padding:0 0 0 19px;}
+						div.catItemCommentsLink a,div.itemCommentsLink a,div.userItemCommentsLink a{color:#98979a;text-decoration:none;}
+						div.catItemCommentsLink a:hover,div.itemCommentsLink a:hover,div.userItemCommentsLink a:hover{text-decoration:underline;}
+
+					span.catItemDateModified{}
+
+
+/* === USER VIEW === */
+
+div.userView{}
+	div.componentheading,h3.itemCommentsCounter,.itemCommentsForm h3{background:url(../images/componentheading_border.png) 0 100% repeat-x;margin:0 0 30px !important;}
+		div.componentheading h2,h3.itemCommentsCounter,.itemCommentsForm h3{text-transform:uppercase;color:#323236;font-size:24px;line-height:32px;margin:0;font-weight:normal;font-family: 'Vidaloka', serif;font-style:normal;}
+
+	/*User block*/
+	div.userBlock{}
+		div.userBlock img{float: left; margin: 0 1em 1em 0;}
+		div.userDescription{}
+		span.userItemDateCreated{}
+
+	/*Items list*/
+	div.userItemList{}
+		div.userItemView{margin:0 0 30px;}
+			div.userItemHeader{}
+				h3.userItemTitle{}
+				span.userItemDateCreated{}
+			div.userItemBody{}
+				div.userItemImageBlock{float:left;margin:0 19px 0 0;}
+					span.userItemImage{display:inline-block;}
+						span.userItemImage a{display:inline-block;}
+							span.userItemImage a img{}
+				div.userItemIntroText{}
+			div.userItemLinks{}
+				div.userItemCategory{}
+			div.userItemCommentsLink{}
+			div.userItemReadMore{}
+				a.k2ReadMore{}
+
+
+/* === GENERIC VIEW === */
+
+div.genericView{}
+	div.genericItemList{}
+		div.genericItemView{}
+			div.genericItemHeader{}
+				h2.genericItemTitle{}
+				span.genericItemDateCreated{}
+			div.genericItemBody{}
+				div.genericItemImageBlock{}
+					span.genericItemImage{}
+						span.genericItemImage a{}
+							span.genericItemImage a img{}
+				div.genericItemIntroText{}
+			div.genericItemCategory{}
+			div.genericItemReadMore{}
+				a.k2ReadMore{}
+
+
+/* === TAGS VIEW === */
+
+div.tagItemView{}
+	div.tagItemList{}
+		div.tagItemView{}
+			div.tagItemHeader{}
+				h2.tagItemTitle{}
+				span.tagItemDateCreated{}
+			div.tagItemBody{}
+				div.tagItemImageBlock{}
+				div.tagItemIntroText{}
+			div.tagItemCategory{}
+			div.tagItemReadMore{}
+				a.k2ReadMore{}
+
+
+/* === SEARCH VIEW === */
+
+div.component-content > div.search{}
+	form#searchForm{}
+		fieldset.word{}
+		div.searchintro{}
+		fieldset.phrases,
+		fieldset.only{margin: 0 0 1em 0;}
+		div.form-limit-and-counter{overflow: hidden;}
+			p.counter{float:right; margin:0;}
+			div.form-limit{float:left;}
+
+	dl.search-results{}
+		dt.result-title{}
+		dd.result-created, dd.result-category{display: inline-block; margin:0;}
+		dd.result-created, dd.result-text{margin: 0 0 0 2em;}
+		dd.result-text{margin: 0 0 1em 0}
+
+
+
+/* === ITEM VIEW ===*/
+
+div.itemView{}
+	div.itemHeader{}
+		h2.itemTitle{}
+		div.itemRatingBlock{}
+		span.itemDateCreated{}
+		span.itemAuthor{}
+	div.itemToolbar{}
+		div.itemToolbar ul{list-style: none; padding:0}
+			div.itemToolbar ul li{display: inline-block; margin: 0 0.5em 0 0;}
+				a#fontDecrease {margin:0; text-decoration: none;}
+				a#fontDecrease img {width:13px;height:13px;background:url() no-repeat;}
+				a#fontIncrease {margin:0;}
+				a#fontIncrease img {width:13px;height:13px;background:url() no-repeat;}
+				a#fontDecrease span, a#fontIncrease span {display:none;}
+
+				a.itemPrintLink{background: url() left top no-repeat; display: inline-block; width: 16px; height:16px; text-indent: -999em;}
+				a.itemEmailLink{background: url() left top no-repeat; display: inline-block; width: 16px; height:16px; text-indent: -999em;}
+				a.itemVideoLink{}
+				a.itemCommentsLink{}
+
+	div.itemBody{}
+		div.itemImageBlock{margin:0 0 13px;}
+			span.itemImage{display:inline-block;}
+				span.itemImage a{display:inline-block;}
+					span.itemImage a img{}
+		div.itemIntroText{}
+		div.itemFullText{}
+		div.itemContentFooter{}
+			span.itemHits{}
+			span.itemDateModified{}
+	div.social-button{margin:0 0 30px; overflow: hidden;}
+		div.social-button span.label{float:left; margin: 0 0.5em 0 0; line-height: 16px;}
+	div.itemSocialSharing{}
+		div.itemTwitterButton,
+		div.itemFacebookButton,
+		div.itemGooglePlusOneButton{float:left; margin: 0 0 0 0.5em;}}
+	div.itemLinks{}
+		div.itemCategory{}
+		div.itemTagsBlock{}
+			ul.itemTags{}
+				ul.itemTags {display: inline; margin: 0; padding: 0;}
+				ul.itemTags li{display: inline-block; margin: 0 0 0 0.5em;}
+		div.itemAttachmentsBlock{}
+			ul.itemAttachments{}
+				ul.itemAttachments li{}
+					ul.itemAttachments li a{}
+	div.itemAuthorBlock{}
+		img.itemAuthorAvatar{float:left; margin: 0 1em 1em 0;}
+		div.itemAuthorDetails{}
+			h3.itemAuthorName{}
+			span.itemAuthorEmail{}
+	div.itemAuthorLatest{}
+		div.itemAuthorLatest ul{}
+			div.itemAuthorLatest ul li{}
+	div.itemVideoBlock{}
+		span.itemVideo{}
+			div.avPlayerWrapper.avVideo{}
+		span.itemVideoCaption{}
+	div.itemComments{}
+		h3.itemCommentsCounter{}
+		ul.itemCommentsList{list-style: none; padding:0 0 30px;margin:0;}
+			ul.itemCommentsList li{margin: 0 0 10px 0;}
+			ul.itemCommentsList li img{float:left; margin: 0 1em 1em 0;}
+				div.commentBody{overflow: hidden;}
+					div.commentBody p{margin: 0 0 1em 0}
+					span.commentAuthorName{color:#323236;}
+					span.commentDate{}
+					div.commentToolbar{clear:both;padding:10px 0 0;}
+						div.commentToolbar > a, span.commentLink{display: inline-block; margin: 0 0.5em 0 0 ;}
+						span.commentLink{float:right;margin:0 0 0 10px;}
+						a.commentApproveLink{}
+						a.commentRemoveLink{}
+		div.itemCommentsForm{}
+			p.itemCommentsFormNotes{}
+			div.itemCommentsForm form span#formLog {font-weight:bold;color:#f00;font-style:normal;position:absolute;left:150px;bottom:10px;}
+			div.itemCommentsForm form .formLogLoading {background:url(../images/loading.gif) no-repeat left center;width:16px;height:16px;}
+
+	div.itemBackToTop{display: none;}
+
+/* === CONTACTS VIEW ===*/
+
+div.component-content div.contact,div.component-content div.login,div.component-content div.reset,div.component-content div.remind,div.component-content div.search,div.component-content div.profile,div.component-content div.logout{padding:130px 30px 76px;position:relative;z-index:2;}
+	div#contact-form-cont{}
+		div.contact-form{}
+			form#contact-form{}
+				input#jform_contact_name{}
+				input#jform_contact_email{}
+				input#jform_contact_emailmsg{}
+				textarea#jform_contact_message{}
+				input#jform_contact_email_copy{}
+				dt.emailCopy{float:left; margin: 0 1em 0 0;}
+	div#contact-address{}
+		#map-wrapper{}
+			#map{height: 360px;}
+		div.contact-contactinfo{}
+		div.contact-miscinfo{}	
+			div.contact-miscinfo h3, div.jicons-icons{display: none;}
+			div.contact-misc{overflow:hidden;padding:10px 0 0;}
+				div.contact-misc p{float: left; width: 50%}
+
+
+
+.only label,.phrases-box label{margin-right:10px;}
+
+/* === ACCOUNT (REGISTRATION) PAGE === */
+	div.k2AccountPage > dl{
+		margin-bottom: 2em;
+		padding-bottom: 1em; 
+	}
+
+	dd.editor :before, dd.editor :after{display: none;}
+	span#description_parent, textarea#description{margin:0 0 1em 0; display: block;}
+	div.toggle-editor{text-align: right;}
+
+	dt.gender{float: left; margin: 0 3em 0 0;}
+	dd.gender label{margin: 0 1em 0 0; }
+
+	div.k2AccountPageUpdate{padding:15px 0 0;}
+
+
+/* === USER LOGIN PAGE === */
+
+div.component-content > div.login div.login-fields{margin: 0 0 1em 0;}
+div.component-content > div.login div.login-fields label{
+	display: inline-block;
+	width: 10em;
+}
+
+/* === USER PROFILE === */
+
+div.profile dl dt{display: block; width: 15em; float: left; margin:0 0 1em 0;}
+div.profile dl dd{margin:0 0 1em 0}
+
+
+
+
+
+
+
+/* === MODULE STYLES ===*/
+
+	div.module-title{}
+	div.module-title h2{}
+
+	/*Module list*/
+	div.k2LatestCommentsBlock > ul,
+	div.k2TopCommentersBlock > ul,
+	div.k2CategoriesListBlock > ul,
+	div.k2ArchivesBlock > ul,
+	form#form-login > ul,
+	div.k2ItemsBlock > ul,
+	div.k2UsersBlock > ul,
+	div.k2AuthorsListBlock > ul{list-style: none; padding:0;}
+
+	/*K2 Content*/
+	div.k2ItemsBlock{}
+		div.k2ItemsBlock ul{}
+			div.k2ItemsBlock > ul >li{margin: 0 0 1em 0;}
+				a.moduleItemTitle{}
+				div.moduleItemIntrotext{}
+					a.moduleItemImage{}
+						a.moduleItemImage img{}
+				span.moduleItemDateCreated{}
+
+
+	/*Latest Comments*/
+	div.k2LatestCommentsBlock{}
+		div.k2LatestCommentsBlock ul{}
+			div.k2LatestCommentsBlock li{margin: 0 0 1em 0;}
+				a.k2Avatar{float:left; margin: 0 1em 1em 0;}
+				div.recentCommentBody{overflow: hidden;}
+					span.lcUsername{}
+					span.lcCommentDate{}
+					span.lcItemTitle{display: block;}
+					span.lcComment{}
+					span.lcItemCategory{}
+					a.moduleItemCategory{}
+					a.moduleItemComments{}
+					span.moduleItemHits{display: block;}
+					a.moduleItemReadMore{}
+
+	/*Top Commenters*/
+	div.k2TopCommentersBlock{}
+		div.k2TopCommentersBlock ul{}
+			div.k2TopCommentersBlock ul li{margin: 0 0 1em 0;}
+				a.tcLink{}
+				a.tcLatestComment{}
+				span.tcLatestCommentDate{display: block;}
+
+	/*Categories*/
+	div.k2CategoriesListBlock{}
+		div.k2CategoriesListBlock ul{}
+			div.k2CategoriesListBlock ul li{}
+
+	/*Archives*/
+	div.k2ArchivesBlock{}
+		div.k2ArchivesBlock ul{}
+			div.k2ArchivesBlock ul li{}
+
+	/*User Login*/
+	div.k2LoginBlock{}
+		form#form-login{}
+			p#form-login-username{}
+				input#modlgn_username{}
+			p#form-login-password{}
+				input#modlgn_passwd{}
+			p#form-login-remember{}
+				form#form-login p label{display: block;}
+				form#form-login p label.checkbox{display: inline-block; margin: 0 1em 0 0;}
+			form#form-login ul{}
+				form#form-login ul li{}
+
+		/*K2 User block*/
+		div.k2UserBlock{}
+			div.k2UserBlockDetails{}
+				div.k2UserBlockDetails a.k2Avatar{margin:0 1em 0 0;}
+				span.ubName{display: block;}
+				ul.k2UserBlockActions{list-style: none;}
+
+	/*Search*/
+	div.mod_search{}
+		input#mod-search-searchword{}
+
+	/*Users module*/
+	div.k2UsersBlock{}
+		div.k2UsersBlock ul{}
+			div.k2UsersBlock ul li{margin: 0 0 1em 0;}	
+				a.ubUserName{}
+				div.ubUserDescription{}
+				div.ubUserAdditionalInfo{}
+				ul.ubUserItems{}
+					ul.ubUserItems li{}
+
+	/*Authord list*/
+	div.k2AuthorsListBlock{}
+		div.k2AuthorsListBlock ul{}
+			div.k2AuthorsListBlock ul li{}
+				a.abAuthorName{}
+				a.abAuthorLatestItem{}
+
+	/*Tags*/
+	div.k2TagCloudBlock{}
+		div.k2TagCloudBlock a{}
+
+	/*Breadcrumbs*/
+	div.k2BreadcrumbsBlock{}
+		span.bcTitle{}
+		span.bcSeparator{}
+		div.k2BreadcrumbsBlock a, span.bcTitle, span.bcSeparator{display: inline-block; margin: 0 0.5em 0 0;}
+
+	/*Social Media Links*/
+	div.smile{}
+		div.smile ul{list-style: none;}
+			div.smile ul li{display: inline-block;}
+				div.smile ul li a{display: block;}
+
+
+
+/*=== GENERAL STYLES ===*/
+
+
+	/* Accessibility */
+	#rt-accessibility .rt-desc {float: left;padding-right: 5px;}
+		#rt-accessibility #rt-buttons {float: left;}
+			#rt-accessibility .button {display: block;width:14px;height:14px;float: left;background: url(../images/typography.png);margin: 2px;}
+			#rt-accessibility .large .button {background-position: 0 -17px;}
+			#rt-accessibility .small .button {background-position: -15px -17px;}
+
+	body.font-size-is-xlarge {font-size: 15px;line-height: 1.7em;}
+	body.font-size-is-large {font-size: 14px;line-height: 1.7em;}
+	body.font-size-is-default {font-size: 12px;line-height: 1.7em;}
+	body.font-size-is-small {font-size: 11px;line-height: 1.7em;}
+	body.font-size-is-xsmall {font-size: 10px;line-height: 1.7em;}
+
+	/*Font Resize*/
+	.smallerFontSize {font-size:100%;line-height:inherit;}
+	.largerFontSize {font-size:150%;line-height:140%;}
+
+	/*Edit link*/
+	span.itemEditLink, span.catItemEditLink, span.userItemEditLink{display: inline-block; float: right; text-align: right; font-size: 0.8em;padding:0 15px 0 0;}
+
+	/*Feed icon*/
+	div.k2FeedIcon{}
+		div.k2FeedIcon a, div.k2FeedIcon a:hover {display:block; float:right; margin:0; padding:0; width:16px; height:16px; background:url(../images/icon-rss.png) no-repeat 50% 50%;}
+		div.k2FeedIcon a span, div.k2FeedIcon a:hover span {display:none;}
+
+	/* --- Calendar --- */
+	div.k2CalendarBlock {height:190px;margin-bottom:8px;} /* use this height value so that the calendar height won't change on Month change via ajax */
+		div.k2CalendarLoader {background:#fff url(../images/system/loading.gif) no-repeat 50% 50%;}
+			.calendar {background:#fff;border-collapse:collapse;}
+			.calendar tr td {text-align:center;vertical-align:middle;padding:2px;border:1px solid #f4f4f4;background:#fff;}
+			.calendar tr td.calendarNavMonthPrev {background:#f3f3f3;text-align:left;}
+			.calendar tr td.calendarNavMonthPrev a {font-size:20px;text-decoration:none;}
+			.calendar tr td.calendarNavMonthPrev a:hover {font-size:20px;text-decoration:none;}
+			.calendar tr td.calendarCurrentMonth {background:#f3f3f3;}
+			.calendar tr td.calendarNavMonthNext {background:#f3f3f3;text-align:right;}
+			.calendar tr td.calendarNavMonthNext a {font-size:20px;text-decoration:none;}
+			.calendar tr td.calendarNavMonthNext a:hover {font-size:20px;text-decoration:none;}
+			.calendar tr td.calendarDayName {background:#e9e9e9;font-size:11px;width:14.2%;}
+			.calendar tr td.calendarDateEmpty {background:#fbfbfb;}
+			.calendar tr td.calendarDate {}
+			.calendar tr td.calendarDateLinked {padding:0;}
+			.calendar tr td.calendarDateLinked a {display:block;padding:2px;text-decoration:none;background:#eee;}
+			.calendar tr td.calendarDateLinked a:hover {display:block;background:#135cae;color:#fff;padding:2px;text-decoration:none;}
+			.calendar tr td.calendarToday {background:#135cae;color:#fff;}
+			.calendar tr td.calendarTodayLinked {background:#135cae;color:#fff;padding:0;}
+			.calendar tr td.calendarTodayLinked a {display:block;padding:2px;color:#fff;text-decoration:none;}
+			.calendar tr td.calendarTodayLinked a:hover {display:block;background:#BFD9FF;padding:2px;text-decoration:none;}
+			.calendar :before, .calendar :after{content:"";}
+			img.calendar{display: none;}
+			
+
+	/* --- Rating --- */
+	div.catItemRatingBlock > span, div.itemRatingBlock span{display: inline-block; margin: 0 0 0 0.5em; line-height: 21px}
+	.itemRatingForm {display:block;vertical-align:middle;line-height:21px;float:left;}
+	div.itemRatingForm .formLogLoading {background:url(../images/system/loading.gif) no-repeat left center;height:21px;padding:0 0 0 20px;}
+		#rt-main .itemRatingList {position:relative;float:left;width:105px;height:21px;overflow:hidden;list-style:none;margin:0;padding:0;background-position:left top;}
+			.itemRatingList, .itemRatingList a:hover, .itemRatingList .itemCurrentRating {background:transparent url(../images/transparent_star.png) left -1000px repeat-x;}
+				.itemRatingList li {display:inline;background:none;padding:0;}
+					.itemRatingList a, .itemRatingList .itemCurrentRating {position:absolute;top:0;left:0;text-indent:-1000px;height:25px;line-height:25px;outline:none;overflow:hidden;border:none;cursor:pointer;}
+					.itemRatingList a:hover {background-position:left -50px;}
+					.itemRatingList a.one-star {width:20%;z-index:6;}
+					.itemRatingList a.two-stars {width:40%;z-index:5;}
+					.itemRatingList a.three-stars {width:60%;z-index:4;}
+					.itemRatingList a.four-stars {width:80%;z-index:3;}
+					.itemRatingList a.five-stars {width:100%;z-index:2;}
+				.itemRatingList .itemCurrentRating {z-index:1;background-position:left -25px;margin:0;padding:0;}
+	.itemRatingLog {font-size:11px;margin:0;padding:0 0 0 4px;float:left;}
+	span.siteRoot {display:none;}
+
+	/* --- Forms --- */
+	form#comment-form{position:relative;}
+		form dl{}
+			form dl dt{height:22px;}
+				form dl dt label{}
+			form dl dd{margin: 0 0 1em 0;min-height:22px;}
+				textarea#commentText{}
+				input#userName{}
+				input#commentEmail{}
+				input#commentURL{}
+		input#submitCommentButton{}
+
+	input.invalid, textarea.invalid{
+		border:1px solid #ff0000 !important;
+		box-shadow: none !important;}
+
+	input[type="checkbox"], input[type="radio"]{position: relative; top:1px;}
+	label{line-height: 1.5em;}
+	legend{color:inherit;}
+
+	/* --- Mailto window --- */
+	
+	div#mailto-window{}
+		a.mailto-close{}	
+
+		form#mailtoForm{}
+			div.formelm{}
+				input#mailto_field{}
+				input#sender_field{}
+				input#from_field{}
+				input#subject_field{}
+
+	/* --- Preloader ---*/
+	a.preloader{background: url(../images/system/loading.gif) center 50% no-repeat !important; display: inline-block;}
+
+	/* --- Pagination --- */
+	div.k2Pagination, div.pagination, div.itemCommentsPagination{}
+		div.k2Pagination ul, div.pagination ul, div.itemCommentsPagination ul{list-style: none;margin:0;padding:31px 0 0;background:url(../images/componentheading_border.png) repeat-x;}
+			div.k2Pagination ul li, div.pagination ul li, div.itemCommentsPagination ul li{display: inline-block; margin: 0 5px 10px 0;}
+
+				li.pagination-start{}
+				li.pagination-prev{}
+				li.pagination-next{}
+				li.pagination-end{}
+
+					span.pagenav{}
+					a.pagenav{}
+						a.pagenav:hover{}
+
+			p.pagination-results{display:none;}
+
+	/* --- Frontend Editing --- */
+
+	#k2Frontend input.inputbox{height: inherit; line-height: inherit}
+		#k2Frontend td.adminK2LeftCol{width: 10em;}
+			td.adminK2LeftCol label{display: inline-block; margin: 0 0.5em 0 0;}
+
+	#k2Frontend .button2-left .linkmacro {background: url() no-repeat scroll 100% 0 transparent;}
+	#k2Frontend button.button{border-radius:0; background: none; color:inherit; padding:0;}
+
+	#editor-xtd-buttons {float: left; padding: 5px;}
+	div.toggle-editor {padding: 5px; text-align: right;}
+
+
+/* === SYSTEM MESSAGES ===*/
+
+/* OpenID icon style */
+input.system-openid, input.com-system-openid { background: url() no-repeat;background-color: #fff;background-position: 0 50%;color: #000;padding-left: 18px;}
+
+/* Unpublished */
+.system-unpublished {background: #e8edf1;border-top: 4px solid #c4d3df;border-bottom: 4px solid #c4d3df;}
+
+/* System Messages */
+#system-message { margin:0px; padding: 0;}
+#system-message dt { font-weight: bold; }
+#system-message dd { margin: 0; font-weight: bold; }
+#system-message dd ul { background: #BFD3E6; color: #0055BB; margin:0 0 20px; list-style: none; padding: 10px; border: 2px solid #84A7DB;}
+
+/* System Standard Messages */
+#system-message dt.message {display: none;}
+
+/* System Error Messages */
+#system-message dt.error {display: none;}
+#system-message dd.error ul {color: #c00;background-color: #EBC8C9;border: 2px solid #DE7A7B;}
+
+/* System Notice Messages */
+#system-message dt.notice {display: none;}
+#system-message dd.notice ul {color: #A08B4C;background: #F5ECC1;border: 2px solid #F0DC7E;}
+
+/* Debug */
+#system-debug {color: #ccc;background-color: #fff;padding: 10px;margin: 10px;}
+#system-debug div {font-size: 11px;}
+
+div.k2ItemsBlock>ul{margin:0;}
+p{margin:0 0 22px;}

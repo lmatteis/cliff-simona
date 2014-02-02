@@ -1,0 +1,32 @@
+/*=== COLOR VARIABLES ===*/
+/*=== DRAWER POSITION ===*/
+/*=== TOP POSITION ===*/
+/*=== HEADER POSITION ===*/
+/*=== SHOWCASE POSITION ===*/
+/*=== FEATURE POSITION ===*/
+/*=== UTILITY POSITION ===*/
+/*=== MAINTOP POSITION ===*/
+/*=== CONTENT ===*/
+
+div.itemComments ul.itemCommentsList li{border:1px solid #e9e8e8;background:#fff;}
+
+/*== Portfolio Page ==*/
+#port div.itemExtraFields {
+  border-color: #e9e8e8;
+}
+/*== User Profile ==*/
+div.profile dl {
+  border-bottom: 1px solid #e9e8e8;
+}
+/*== Search Page ==*/
+div.component-content > div.search #searchForm div.form-limit-and-counter {
+  border-top: 1px solid #e9e8e8;
+  border-bottom: 1px solid #e9e8e8;
+}
+/*== User Registration ==*/
+div.k2AccountPage > dl {
+  border-bottom: 1px solid #d4d4d4;
+}
+/*=== MAINBOTTOM POSITION ===*/
+/*=== BOTTOM POSITION ===*/
+/*=== FOOTER POSITION ===*/

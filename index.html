@@ -1,79 +1,417 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" >
+    <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="generator" content="Joomla! - Open Source Content Management" />
+  <title>Cliff &amp; Simona</title>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Vidaloka" type="text/css" />
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Cliff-simona : A wedding site for my sister" />
+  <link rel="stylesheet" href="css/modal.css" type="text/css" />
+  <link rel="stylesheet" href="css/rokbox-style.css" type="text/css" />
+  <link rel="stylesheet" href="css/grid-12.css" type="text/css" />
+  <link rel="stylesheet" href="css/style1.css" type="text/css" />
+  <link rel="stylesheet" href="css/sizes.css" type="text/css" />
+  <link rel="stylesheet" href="css/normalize.css" type="text/css" />
+  <link rel="stylesheet" href="css/default.css" type="text/css" />
+  <link rel="stylesheet" href="css/template.css" type="text/css" />
+  <link rel="stylesheet" href="css/tooltips.css" type="text/css" />
+  <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" />
+  <link rel="stylesheet" href="css/fusionmenu.css" type="text/css" />
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
 
-    <title>Cliff-simona</title>
-  </head>
+  <style type="text/css">
+body {background:#a4a4a4;}#rt-top {background:;}#rt-top .rt-container {background:;}#rt-header {background:;}#rt-header .rt-container {background:;}#rt-menu {background:;}#rt-menu .rt-container {background:;}#rt-showcase {background:;}#rt-showcase .rt-container {background:;}#rt-feature {background:;}#rt-feature .rt-container {background:;}#rt-utility {background:;}#rt-utility .rt-container {background:;}#rt-maintop {background:;}#rt-maintop .rt-container {background:;}#rt-main {background:;}#rt-main .rt-container {background:;}#rt-mainbottom {background:;}#rt-mainbottom .rt-container {background:;}#rt-bottom {background:;}#rt-bottom .rt-container {background:;}#rt-footer {background:;}#rt-footer .rt-container {background:;}#rt-copyright {background:#323236;}#rt-copyright .rt-container {background:;}body a {color:#323236;}body a:hover {color:#98979a; }a.moduleItemReadMore, a.k2ReadMore, a.moduleCustomLink,span.commentLink a,div.commentToolbar > a {color:#ffffff; background:;}a.moduleItemReadMore:hover, a.k2ReadMore:hover, a.moduleCustomLink:hover,span.commentLink a:hover,div.commentToolbar > a:hover {color:#ffffff;background:#242429;}div.itemCommentsForm form input#submitCommentButton, input[type="submit"], button.button {color:#ffffff; background:;}div.itemCommentsForm form input#submitCommentButton:hover, input[type="submit"]:hover, button.button:hover {color:#ffffff;background:#242429;}.menutop li.root {background:;}.menutop li.root > .item {color:#848388;}.menutop li.root:hover, .menutop li.root.active, .menutop li.root.f-mainparent-itemfocus{
+					 background:;}.menutop li.root:hover > .item, .menutop li.root.active > .item, .menutop li.root.f-mainparent-itemfocus > .item{
+					 color:#fdfdfd;}.menutop ul {background:#2b2c32;}.menutop ul li > .item {color:#848388; background:transparent;}.menutop ul li > .item:hover, .menutop ul li.active > .item, .menutop ul li.f-menuparent-itemfocus > .item{
+					 color:#ffffff; background:;}{background:;}{background:;}{background:;}body {font-family:Georgia, serif; font-size:13px; line-height:22px; color:#98979a; }
+body #rt-logo {width:240px;height:109px;}
+  </style>
 
-  <body>
+  <script src="js/mootools-core.js" type="text/javascript"></script>
+  <script src="js/core.js" type="text/javascript"></script>
+  <script src="js/mootools-more.js" type="text/javascript"></script>
+  <script src="js/modal.js" type="text/javascript"></script>
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js" type="text/javascript"></script>
+  <script src="js/jquerynoconflict.js" type="text/javascript"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript"></script>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/lmatteis/cliff-simona">View on GitHub</a>
+  <script src="js/k2.js" type="text/javascript"></script>
+  <script src="js/rokbox.js" type="text/javascript"></script>
+  <script src="js/tooltips.js" type="text/javascript"></script>
+  <script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+  <script src="js/jquery.preloader.js" type="text/javascript"></script>
+  <script src="js/scripts.js" type="text/javascript"></script>
+  <script src="js/fusion.js" type="text/javascript"></script>
+  <script src="js/bgStretch.js" type="text/javascript"></script>
+  <script src="js/uCarousel.js" type="text/javascript"></script>
+  <script src="js/switcher.js" type="text/javascript"></script>
 
-          <h1 id="project_title">Cliff-simona</h1>
-          <h2 id="project_tagline">A wedding site for my sister</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/lmatteis/cliff-simona/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/lmatteis/cliff-simona/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Cliff-simona maintained by <a href="https://github.com/lmatteis">lmatteis</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+  <script type="text/javascript">
+		window.addEvent('domready', function() {
+			SqueezeBox.initialize({});
+			SqueezeBox.assign($$('a.modal'), {
+				parse: 'rel'
+			});
+		});
+var K2SitePath = 'http://livedemo00.template-help.com/joomla_40607/';
+var rokboxPath = 'http://livedemo00.template-help.com/joomla_40607/plugins/system/rokbox/';
+		if (typeof(RokBox) !== 'undefined') {
+			window.addEvent('domready', function() {
+				var rokbox = new RokBox({
+					'className': 'rokbox',
+					'theme': 'clean',
+					'transition': Fx.Transitions.Quad.easeOut,
+					'duration': 200,
+					'chase': 40,
+					'frame-border': 20,
+					'content-padding': 0,
+					'arrows-height': 35,
+					'effect': 'quicksilver',
+					'captions': 0,
+					'captionsDelay': 800,
+					'scrolling': 0,
+					'keyEvents': 1,
+					'overlay': {
+						'background': '#000000',
+						'opacity': 0.85,
+						'duration': 200,
+						'transition': Fx.Transitions.Quad.easeInOut
+					},
+					'defaultSize': {
+						'width': 640,
+						'height': 460
+					},
+					'autoplay': 'true',
+					'controller': 'false',
+					'bgcolor': '#f3f3f3',
+					'youtubeAutoplay': 0,
+					'youtubeHighQuality': 0,
+					'vimeoColor': '00adef',
+					'vimeoPortrait': 0,
+					'vimeoTitle': 0,
+					'vimeoFullScreen': 1,
+					'vimeoByline': 0
+				});
+			});
+		};
+window.addEvent('domready', function() {
+                new Fusion('ul.menutop', {
+                    pill: 0,
+                    effect: 'slide and fade',
+                    opacity:  1,
+                    hideDelay:  500,
+                    centered:  0,
+                    tweakInitial: {'x': 227, 'y': -31},
+                    tweakSubsequent: {'x':  0, 'y':  0},
+                    tweakSizes: {'width': 0, 'height': 0},
+                    menuFx: {duration:  300, transition: Fx.Transitions.Circ.easeOut},
+                    pillFx: {duration:  400, transition: Fx.Transitions.Back.easeOut}
+                });
+});
+window.addEvent('load', function() {
+});
+  </script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				/*Image Preloader*/
+				$("span.catItemImage, span.itemImage, span.userItemImage, span.genericItemImage").preloader({
+					iconURL:"http://livedemo00.template-help.com/joomla_40607/templates/theme1124/images/system/loading.gif"
+				});
+			});
+		</script>
+</head>
+<body class="cssstyle-style1 menu-type-fusionmenu col12" id="all">
+			<div id="rt-iewarn">
+				<div class="rt-container">
+                    <div class="clear"></div>
+				</div>
+			</div>
+		<div id="wrapper" class=" homepage">
+						<div id="rt-drawer">
+					                    <div class="rt-block">
+<div id="k2ModuleBox115" class="k2ItemsBlock">
+<div id="gspinner"></div>
+	<div class="bg-pags">
+    <a href="#" class="prevPage button" data-type="prevPage"><span></span></a>
+    <a href="#" class="nextPage button" data-type="nextPage"><span></span></a>
+    <div class="pags_outer">
+    <div class="pags">
+  <ul>
+        <li class="even">
+		  	      <a class="moduleItemImage" href="http://livedemo00.template-help.com/joomla_40607/media/k2/items/cache/ccb4e23c8aa216f1e96d31ab209c036b_XL.jpg">
+	      <span class="img_container">
+	      	<img src="http://livedemo00.template-help.com/joomla_40607/media/k2/items/cache/ccb4e23c8aa216f1e96d31ab209c036b_XS.jpg" alt="Slide-1"/>
+          </span>
+	      </a>
+	          </li>
+        <li class="odd">
+		  	      <a class="moduleItemImage" href="http://livedemo00.template-help.com/joomla_40607/media/k2/items/cache/6f43b5263fbba79c5962514b85d34738_XL.jpg">
+	      <span class="img_container">
+	      	<img src="http://livedemo00.template-help.com/joomla_40607/media/k2/items/cache/6f43b5263fbba79c5962514b85d34738_XS.jpg" alt="Slide-2"/>
+          </span>
+	      </a>
+	          </li>
+        <li class="even">
+		  	      <a class="moduleItemImage" href="http://livedemo00.template-help.com/joomla_40607/media/k2/items/cache/19f9cefdfb07230a68581d617885a3af_XL.jpg">
+	      <span class="img_container">
+	      	<img src="http://livedemo00.template-help.com/joomla_40607/media/k2/items/cache/19f9cefdfb07230a68581d617885a3af_XS.jpg" alt="Slide-3"/>
+          </span>
+	      </a>
+	          </li>
+        <li class="odd">
+		  	      <a class="moduleItemImage" href="http://livedemo00.template-help.com/joomla_40607/media/k2/items/cache/1698b847c2e4fe98c05adcdc9d420590_XL.jpg">
+	      <span class="img_container">
+	      	<img src="http://livedemo00.template-help.com/joomla_40607/media/k2/items/cache/1698b847c2e4fe98c05adcdc9d420590_XS.jpg" alt="Slide-4"/>
+          </span>
+	      </a>
+	          </li>
+        <li class="even">
+		  	      <a class="moduleItemImage" href="http://livedemo00.template-help.com/joomla_40607/media/k2/items/cache/d6086de322f98f66cc694f32ea284557_XL.jpg">
+	      <span class="img_container">
+	      	<img src="http://livedemo00.template-help.com/joomla_40607/media/k2/items/cache/d6086de322f98f66cc694f32ea284557_XS.jpg" alt="Slide-5"/>
+          </span>
+	      </a>
+	          </li>
+        <li class="odd">
+		  	      <a class="moduleItemImage" href="http://livedemo00.template-help.com/joomla_40607/media/k2/items/cache/245effadf41c6129f4fe7accc564ef86_XL.jpg">
+	      <span class="img_container">
+	      	<img src="http://livedemo00.template-help.com/joomla_40607/media/k2/items/cache/245effadf41c6129f4fe7accc564ef86_XS.jpg" alt="Slide-6"/>
+          </span>
+	      </a>
+	          </li>
+        <li class="even">
+		  	      <a class="moduleItemImage" href="http://livedemo00.template-help.com/joomla_40607/media/k2/items/cache/5483e331a9bace540b3a2478fc014e25_XL.jpg">
+	      <span class="img_container">
+	      	<img src="http://livedemo00.template-help.com/joomla_40607/media/k2/items/cache/5483e331a9bace540b3a2478fc014e25_XS.jpg" alt="Slide-7"/>
+          </span>
+	      </a>
+	          </li>
+        <li class="odd">
+		  	      <a class="moduleItemImage" href="http://livedemo00.template-help.com/joomla_40607/media/k2/items/cache/68b62085e41e8f225811766f8d5eb2bb_XL.jpg">
+	      <span class="img_container">
+	      	<img src="http://livedemo00.template-help.com/joomla_40607/media/k2/items/cache/68b62085e41e8f225811766f8d5eb2bb_XS.jpg" alt="Slide-8"/>
+          </span>
+	      </a>
+	          </li>
+        <li class="even">
+		  	      <a class="moduleItemImage" href="http://livedemo00.template-help.com/joomla_40607/media/k2/items/cache/924e149af069b8ea323a809fbb1171d4_XL.jpg">
+	      <span class="img_container">
+	      	<img src="http://livedemo00.template-help.com/joomla_40607/media/k2/items/cache/924e149af069b8ea323a809fbb1171d4_XS.jpg" alt="Slide-9"/>
+          </span>
+	      </a>
+	          </li>
+        <li class="odd">
+		  	      <a class="moduleItemImage" href="http://livedemo00.template-help.com/joomla_40607/media/k2/items/cache/d48ed900e79fa9547169c26138b4cd8d_XL.jpg">
+	      <span class="img_container">
+	      	<img src="http://livedemo00.template-help.com/joomla_40607/media/k2/items/cache/d48ed900e79fa9547169c26138b4cd8d_XS.jpg" alt="Slide-10"/>
+          </span>
+	      </a>
+	          </li>
+        <li class="even">
+		  	      <a class="moduleItemImage" href="http://livedemo00.template-help.com/joomla_40607/media/k2/items/cache/13f34e2b533e12c6166f88368dcd8c07_XL.jpg">
+	      <span class="img_container">
+	      	<img src="http://livedemo00.template-help.com/joomla_40607/media/k2/items/cache/13f34e2b533e12c6166f88368dcd8c07_XS.jpg" alt="Slide-11"/>
+          </span>
+	      </a>
+	          </li>
+        <li class="odd lastItem">
+		  	      <a class="moduleItemImage" href="http://livedemo00.template-help.com/joomla_40607/media/k2/items/cache/852967248dd3e6cb3942a1fe6af42945_XL.jpg">
+	      <span class="img_container">
+	      	<img src="http://livedemo00.template-help.com/joomla_40607/media/k2/items/cache/852967248dd3e6cb3942a1fe6af42945_XS.jpg" alt="Slide-12"/>
+          </span>
+	      </a>
+	          </li>
+      </ul>
+  </div>
+  </div>
+</div>
+        <div id="bgStretch"><img src="http://livedemo00.template-help.com/joomla_40607/media/k2/items/cache/ccb4e23c8aa216f1e96d31ab209c036b_XL.jpg" alt="" /></div>
+</div>
+<script type="text/javascript">
+(function($){
+   $(window).load(function(){
+	$('#bgStretch')
+		.bgStretch({
+			navs:$('.bg-pags .pags')
+				.uCarousel({
+					axis:'x'
+					,show:6
+				})
+				.navs(0)
+		})
+		.sImg({
+			spinner:'<div class="bg-spinner"></div>'
+		})
+		$.when('.wrapper')
+	.then(function(){
+		$('#gspinner')
+		.fadeOut()
+	})
+	})
+})(jQuery);
+</script>            </div>
+        	                    <div class="rt-block">
+                                <div class="smile" style="text-align: right "> <a style="margin:0;" rel="nofollow" href="#" target="_blank"><img src="http://livedemo00.template-help.com/joomla_40607/modules/mod_socialmedialinks/icons/custom/size3/facebook.png" alt="Facebook" title="Follow us on Facebook" /></a>	</div>
+    <div class="clr"></div>
+            </div>
+					<div class="clear"></div>
+			</div>
+									<div id="rt-menu">
+								<div class="rt-block">
+    	    	<a href="http://livedemo00.template-help.com/joomla_40607/" id="rt-logo"></a>
+    		</div>
+<div class="rt-fusionmenu">
+<div class="nopill">
+<div class="rt-menubar">
+    <ul class="menutop level1 " >
+                        <li class="item101 active root" >
+                            <a class="orphan item bullet" href="http://livedemo00.template-help.com/joomla_40607/"  >
+                    <span>
+                                        Main page                                                            </span>
+                </a>
+                    </li>
+                                <li class="item116 root" >
+                            <a class="orphan item bullet" href="http://livedemo00.template-help.com/joomla_40607/index.php/about-us"  >
+                    <span>
+                                        About us                                                            </span>
+                </a>
+                    </li>
+                                <li class="item118 parent root" >
+                            <span class="daddy item bullet nolink">
+                    <span>
+                                            Wedding Gallery                                                            </span>
+                </span>
+                                                <div class="fusion-submenu-wrapper level2" style="width:200px;">
+                        <ul class="level2" style="width:200px;">
+                                                                                                        <li class="item119" >
+                            <a class="orphan item bullet" href="http://livedemo00.template-help.com/joomla_40607/index.php/wedding-gallery/columns-2"  >
+                    <span>
+                                        Columns 2                                                            </span>
+                </a>
+                    </li>
+                                                                                                                                                <li class="item120" >
+                            <a class="orphan item bullet" href="http://livedemo00.template-help.com/joomla_40607/index.php/wedding-gallery/columns-3"  >
+                    <span>
+                                        Columns 3                                                            </span>
+                </a>
+                    </li>
+                                                                                                                                                <li class="item121" >
+                            <a class="orphan item bullet" href="http://livedemo00.template-help.com/joomla_40607/index.php/wedding-gallery/columns-4"  >
+                    <span>
+                                        Columns 4                                                            </span>
+                </a>
+                    </li>
+                                                                                            </ul>
+                                                <div class="drop-bot"></div>
+                    </div>
+                                    </li>
+                                <li class="item117 parent root" >
+                            <a class="daddy item bullet" href="http://livedemo00.template-help.com/joomla_40607/index.php/our-blog"  >
+                    <span>
+                                        Our Blog                                                            </span>
+                </a>
+                                                <div class="fusion-submenu-wrapper level2" style="width:180px;">
+                        <ul class="level2" style="width:180px;">
+                                                                                                        <li class="item177" >
+                            <a class="orphan item bullet" href="http://livedemo00.template-help.com/joomla_40607/index.php/our-blog/login"  >
+                    <span>
+                                        Login                                                            </span>
+                </a>
+                    </li>
+                                                                                                                                                <li class="item178" >
+                            <a class="orphan item bullet" href="http://livedemo00.template-help.com/joomla_40607/index.php/our-blog/search"  >
+                    <span>
+                                        Search                                                            </span>
+                </a>
+                    </li>
+                                                                                            </ul>
+                                                <div class="drop-bot"></div>
+                    </div>
+                                    </li>
+                                <li class="item114 root" >
+                            <a class="orphan item bullet" href="http://livedemo00.template-help.com/joomla_40607/index.php/contacts"  >
+                    <span>
+                                        Contacts                                                            </span>
+                </a>
+                    </li>
+                    </ul>
+</div>
+</div>
+</div>
+					<div class="clear"></div>
+                    <div class="menu_holder"></div>
+                    <div class="menu_button"><span class="collapse">Collapse Menu</span><span class="expand">Expand Menu</span></div>
+			</div>
+			<div id="rt-main">
+                                                                        <div id="rt-content-bottom">
+                                                    <div class="clear"></div>
+                        </div>
+                                                						<div class="rt-block">
+	                        <div id="rt-mainbody">
+								<div class="component-content">
+<!-- Start K2 Category Layout -->
+<!-- JoomlaWorks "K2" (v2.5.7) | Learn more about K2 at http://getk2.org -->
+								</div>
+	                        </div>
+						</div>
+                    <div class="clear"></div>
+            </div>
+												<div class="footer-container">
+												<div id="rt-copyright">
+					<div class="rt-container">
+						<div class="rt-grid-12 rt-alpha rt-omega">
+			<div class="clear"></div>
+			<div class="rt-block">
+				<p class="copyright">
+					<span class="sitename">Anthony & Laura </span>
+					&copy;
+					<span class="date"> 2014</span>
+					<span class="footerText"></span> &nbsp; &nbsp;&nbsp;
+											<a href="http://livedemo00.template-help.com/joomla_40607/index.php/privacy-policy">Privacy Policy</a>
+									</p>
+			</div>
+</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+																              <div id="rt-popup">
+                                      <div class="rt-block">
+                				<div class="module-title">
+                	<h2 class="title">User Login</h2>
+				</div>
+<div id="k2ModuleBox85" class="k2LoginBlock">
+	<form action="http://livedemo00.template-help.com/joomla_40607/index.php" method="post" name="login" id="form-login" >
+	  <fieldset class="input">
+	    <p id="form-login-username">
+	      <label for="modlgn_username">Username</label>
+	      <input id="modlgn_username" type="text" name="username" class="inputbox" size="18" />
+	    </p>
+	    <p id="form-login-password">
+	      <label for="modlgn_passwd">Password</label>
+	      <input id="modlgn_passwd" type="password" name="password" class="inputbox" size="18" />
+	    </p>
+	    	    <p id="form-login-remember">
+	      <label for="modlgn_remember" class="checkbox">Remember me</label>
+	      <input id="modlgn_remember" type="checkbox" name="remember" class="checkbox" value="yes" />
+	    </p>
+	    <input type="submit" name="Submit" class="button" value="Login" />
+	  </fieldset>
+	  <ul>
+	    <li><a href="http://livedemo00.template-help.com/joomla_40607/index.php/our-blog/login?view=reset">Forgot your password?</a></li>
+	    <li><a href="http://livedemo00.template-help.com/joomla_40607/index.php/our-blog/login?view=remind">Forgot your username?</a></li>
+	    	    <li><a href="http://livedemo00.template-help.com/joomla_40607/index.php/our-blog/login?view=registration">Create an account</a></li>
+	    	  </ul>
+	  <input type="hidden" name="option" value="com_users" />
+	  <input type="hidden" name="task" value="user.login" />
+	  <input type="hidden" name="return" value="L2pvb21sYV80MDYwNy8=" />
+	  <input type="hidden" name="63fa748f44688e95a4e65f4edec6cbe2" value="1" />	</form>
+</div>
+            </div>
+              </div>
+			</div>
+		</div>
+</body>
 </html>
+
