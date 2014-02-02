@@ -464,7 +464,7 @@ div.profile dl dd{margin:0 0 1em 0}
 
 	/* --- Calendar --- */
 	div.k2CalendarBlock {height:190px;margin-bottom:8px;} /* use this height value so that the calendar height won't change on Month change via ajax */
-		div.k2CalendarLoader {background:#fff url(../images/system/loading.gif) no-repeat 50% 50%;}
+		div.k2CalendarLoader {background:#fff url(../images/loading.gif) no-repeat 50% 50%;}
 			.calendar {background:#fff;border-collapse:collapse;}
 			.calendar tr td {text-align:center;vertical-align:middle;padding:2px;border:1px solid #f4f4f4;background:#fff;}
 			.calendar tr td.calendarNavMonthPrev {background:#f3f3f3;text-align:left;}
@@ -491,7 +491,7 @@ div.profile dl dd{margin:0 0 1em 0}
 	/* --- Rating --- */
 	div.catItemRatingBlock > span, div.itemRatingBlock span{display: inline-block; margin: 0 0 0 0.5em; line-height: 21px}
 	.itemRatingForm {display:block;vertical-align:middle;line-height:21px;float:left;}
-	div.itemRatingForm .formLogLoading {background:url(../images/system/loading.gif) no-repeat left center;height:21px;padding:0 0 0 20px;}
+	div.itemRatingForm .formLogLoading {background:url(../images/loading.gif) no-repeat left center;height:21px;padding:0 0 0 20px;}
 		#rt-main .itemRatingList {position:relative;float:left;width:105px;height:21px;overflow:hidden;list-style:none;margin:0;padding:0;background-position:left top;}
 			.itemRatingList, .itemRatingList a:hover, .itemRatingList .itemCurrentRating {background:transparent url(../images/transparent_star.png) left -1000px repeat-x;}
 				.itemRatingList li {display:inline;background:none;padding:0;}
@@ -539,7 +539,7 @@ div.profile dl dd{margin:0 0 1em 0}
 				input#subject_field{}
 
 	/* --- Preloader ---*/
-	a.preloader{background: url(../images/system/loading.gif) center 50% no-repeat !important; display: inline-block;}
+	a.preloader{background: url(../images/loading.gif) center 50% no-repeat !important; display: inline-block;}
 
 	/* --- Pagination --- */
 	div.k2Pagination, div.pagination, div.itemCommentsPagination{}

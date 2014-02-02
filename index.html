@@ -126,7 +126,7 @@ window.addEvent('load', function() {
 			jQuery(document).ready(function($) {
 				/*Image Preloader*/
 				$("span.catItemImage, span.itemImage, span.userItemImage, span.genericItemImage").preloader({
-					iconURL:"http://livedemo00.template-help.com/joomla_40607/templates/theme1124/images/system/loading.gif"
+					iconURL:"images/loading.gif"
 				});
 
 			});
@@ -147,7 +147,7 @@ window.addEvent('load', function() {
 					                    <div class="rt-block">
 <div id="k2ModuleBox115" class="k2ItemsBlock">
 <div id="gspinner"></div>
-	<div class="bg-pags">
+	<div class="bg-pags" style="display:none">
     <a href="#" class="prevPage button" data-type="prevPage"><span></span></a>
     <a href="#" class="nextPage button" data-type="nextPage"><span></span></a>
     <div class="pags_outer">
@@ -355,7 +355,17 @@ window.addEvent('load', function() {
                     <div class="menu_holder"></div>
                     <div class="menu_button"><span class="collapse">Collapse Menu</span><span class="expand">Expand Menu</span></div>
 			</div>
-			<div id="rt-main">
+			<div id="rt-main" style="display:none">
+                                                <div id="rt-content-top">
+                            <div class="rt-grid-12 rt-alpha rt-omega">
+                    <div class="close">
+                    <div class="rt-block">
+<ul class="menu">
+<li id="item-175" class="lastItem firstItem"><a href="#/"><span>Close</span></a></li></ul>            </div>
+                </div>
+</div>
+                        <div class="clear"></div>
+                        </div>
                                                                         <div id="rt-content-bottom">
                                                     <div class="clear"></div>
                         </div>
@@ -363,12 +373,98 @@ window.addEvent('load', function() {
 	                        <div id="rt-mainbody">
 								<div class="component-content">
 <!-- Start K2 Category Layout -->
+	<div id="k2Container" class="itemListView about">
+<!-- Page title -->
+			<div class="componentheading about">
+			<h2>About us</h2>
+		</div>
+<!-- RSS feed icon -->
+<!-- Blocks for current category and subcategories -->
+			<div class="itemListCategoriesBlock">
+	<!-- Category block -->
+	<!-- Subcategories -->
+					</div>					
+<!-- Item list -->
+		<div class="itemList">
+				<!-- Leading items -->
+			<div id="itemListLeading">
+									<div class="K2ItemsRow">
+				<div class="itemContainer itemContainerLast">
+<!-- Start K2 Item Layout -->
+<div class="catItemView groupLeading about">
+	<!-- Plugins: BeforeDisplay -->
+	<!-- K2 Plugins: K2BeforeDisplay -->
+<!-- Item Image -->
+					<div class="catItemImageBlock">
+				<span class="catItemImage">
+				<a href="/joomla_40607/index.php/about-us/item/11-lorem-ipsum-dolor-sit-amet-conse-ctetur" title="Lorem ipsum dolor sit amet conse ctetur" class="">
+					<img src="/joomla_40607/media/k2/items/cache/c82cc4e14a1d2c8c8ffff9840d24b558_L.jpg" alt="Lorem ipsum dolor sit amet conse ctetur" style="width: 560px; height: auto; visibility: visible; opacity: 1;">
+				</a>
+				</span>
+				<div class="clr"></div>
+			</div>
+<!--Item Header - START -->
+	<div class="catItemHeader">
+<!-- Item title -->
+			<h3 class="catItemTitle">
+					Lorem ipsum dolor sit amet conse ctetur				
+							</h3>
+<!-- Date created -->
+<!-- Item Author -->		
+<!-- Anchor link to comments below -->	
+		</div>
+<!--Item Header - END -->
+	<!-- Plugins: AfterDisplayTitle -->
+	<!-- K2 Plugins: K2AfterDisplayTitle -->
+<!-- Item Rating -->
+<!--Item body - START -->
+	<div class="catItemBody">
+		<!-- Plugins: BeforeDisplayContent -->
+		<!-- K2 Plugins: K2BeforeDisplayContent -->
+<!-- Item introtext -->		
+					<div class="catItemIntroText">
+				<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+			</div>
+		<div class="clr"></div>
+					<!-- Item "read more..." link -->
+										<div class="catItemReadMore">
+						<a class="k2ReadMore" href="/joomla_40607/index.php/about-us/item/11-lorem-ipsum-dolor-sit-amet-conse-ctetur">
+							Read More						</a>
+					</div>
+<!-- Item extra fields -->		
+		<!-- Plugins: AfterDisplayContent -->
+		<!-- K2 Plugins: K2AfterDisplayContent -->
+		<div class="clr"></div>
+	</div>
+<!--Item body - END -->
+	<div class="clr"></div>
+<!-- Item video -->	
+<!-- Item image gallery -->
+	<div class="clr"></div>
+<!-- Item date modified -->
+	<!-- Plugins: AfterDisplay -->
+	<!-- K2 Plugins: K2AfterDisplay -->
+	<div class="clr"></div>
+</div>
+<!-- End K2 Item Layout -->
+					<div class="clr"></div>
+				</div>
+								<div class="clr"></div>
+					</div>
+											</div>
+			<div class="clr"></div>
+			<div class="clr"></div>
+		</div>
+		<!-- Pagination -->
+	</div>
+<!-- End K2 Category Layout -->
 <!-- JoomlaWorks "K2" (v2.5.7) | Learn more about K2 at http://getk2.org -->
 								</div>
 	                        </div>
 						</div>
                     <div class="clear"></div>
-            </div>
+            </div><!--/rt-main-->
+
 												<div class="footer-container">
 												<div id="rt-copyright">
 					<div class="rt-container">

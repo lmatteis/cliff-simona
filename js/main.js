@@ -1,15 +1,20 @@
 (function($) {
 
-var app = $.sammy('#main', function() {
-
+$(function () { 
+  var app = $.sammy(function () {
     this.get('#/', function(context) {
-        context.log('Yo yo yo');
+        $('#rt-main').fadeOut(function() {
+            $('.bg-pags').fadeIn();
+        });
     });
+    this.get('#/about-us', function(context) {
+        $('.bg-pags').fadeOut(function() {
+            $('#rt-main').fadeIn();
+        });
+    });
+  })
+  app.run();
 
-});
-
-$(function() {
-    app.run('#/');
 });
 
 })(jQuery);
