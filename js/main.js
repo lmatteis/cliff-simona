@@ -13,7 +13,7 @@ $(function () {
         });
     });
   })
-  app.run();
+  app.run('#/');
 
 });
 
