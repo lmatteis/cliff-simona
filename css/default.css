@@ -196,7 +196,9 @@ div.itemView{}
 				a.itemVideoLink{}
 				a.itemCommentsLink{}
 
-	div.itemBody{}
+	div.itemBody{
+   margin-bottom: 50px; 
+    }
 		div.itemImageBlock{margin:0 0 13px;}
 			span.itemImage{display:inline-block;}
 				span.itemImage a{display:inline-block;}
