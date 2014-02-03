@@ -202,7 +202,8 @@ window.addEvent('load', function() {
 <div class="rt-fusionmenu">
 <div class="nopill">
 <div class="rt-menubar">
-    <ul class="menutop level1 " >
+    <ul class="menutop level1 " id="left-menutop">
+        <!--
         <li class="about-us root" >
             <a class="orphan item bullet" href="#/about-us"  >
                 <span>About us</span>
@@ -263,6 +264,7 @@ window.addEvent('load', function() {
                 <span>RSVP</span>
             </a>
         </li>
+        -->
     </ul>
 </div>
 </div>
@@ -271,13 +273,13 @@ window.addEvent('load', function() {
                     <div class="menu_holder"></div>
                     <div class="menu_button"><span class="collapse">Collapse Menu</span><span class="expand">Expand Menu</span></div>
 			</div>
-			<div id="rt-main" style="display:none">
-                                                <div id="rt-content-top">
+			<div id="rt-main" class="rt-main" style="display:none">
+                                                <div class="rt-content-top">
                             <div class="rt-grid-12 rt-alpha rt-omega">
                     <div class="close">
                     <div class="rt-block">
 <ul class="menu">
-<li id="item-175" class="lastItem firstItem"><a href="#/"><span>Close</span></a></li></ul>            </div>
+<li class="lastItem firstItem"><a href="#/"><span>Close</span></a></li></ul>            </div>
                 </div>
 </div>
                         <div class="clear"></div>
@@ -286,10 +288,10 @@ window.addEvent('load', function() {
                                                     <div class="clear"></div>
                         </div>
                                                 						<div class="rt-block">
-	                        <div id="rt-mainbody">
+	                        <div class="rt-mainbody">
 								<div class="component-content">
 <!-- Start K2 Category Layout -->
-	<div id="k2Container" class="itemListView about">
+	<div class="k2Container" class="itemListView about">
 <!-- Page title -->
 			<div class="componentheading about">
 			<h2>About us</h2>
@@ -303,7 +305,7 @@ window.addEvent('load', function() {
 <!-- Item list -->
 		<div class="itemList">
 				<!-- Leading items -->
-			<div id="itemListLeading">
+			<div class="itemListLeading">
 									<div class="K2ItemsRow">
 				<div class="itemContainer itemContainerLast">
 <!-- Start K2 Item Layout -->
@@ -313,9 +315,11 @@ window.addEvent('load', function() {
 <!-- Item Image -->
 					<div class="catItemImageBlock">
 				<span class="catItemImage">
+                <!--
 				<a href="/joomla_40607/index.php/about-us/item/11-lorem-ipsum-dolor-sit-amet-conse-ctetur" title="Lorem ipsum dolor sit amet conse ctetur" class="">
-					<img src="/joomla_40607/media/k2/items/cache/c82cc4e14a1d2c8c8ffff9840d24b558_L.jpg" alt="Lorem ipsum dolor sit amet conse ctetur" style="width: 560px; height: auto; visibility: visible; opacity: 1;">
+					<img src="" alt="Lorem ipsum dolor sit amet conse ctetur" style="width: 560px; height: auto; visibility: visible; opacity: 1;">
 				</a>
+                -->
 				</span>
 				<div class="clr"></div>
 			</div>
@@ -344,7 +348,7 @@ window.addEvent('load', function() {
 		<div class="clr"></div>
 					<!-- Item "read more..." link -->
 										<div class="catItemReadMore">
-						<a class="k2ReadMore" href="/joomla_40607/index.php/about-us/item/11-lorem-ipsum-dolor-sit-amet-conse-ctetur">
+						<a class="k2ReadMore" href="#/">
 							Read More						</a>
 					</div>
 <!-- Item extra fields -->		
