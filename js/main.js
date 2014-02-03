@@ -83,8 +83,8 @@ function AddPage(page) {
     $clone.insertAfter($rtmain);
 
     $clone.find('.k2Container .componentheading h2').text(title || subtitle);
-    $clone.find('.catItemHeader h3.catItemTitle').text(subtitle || title);
-    $clone.find('.catItemBody .catItemIntroText').html(content);
+    $clone.find('.itemHeader h2.itemTitle').text(subtitle || title);
+    $clone.find('.itemBody').html(content);
 
 
 
