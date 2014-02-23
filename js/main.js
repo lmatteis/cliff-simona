@@ -80,14 +80,27 @@ function AddPage(page) {
     var $clone = $rtmain.clone();
     $clone.attr('id', convertToSlug(subtitle || title));
 
-    $clone.insertAfter($rtmain);
 
     $clone.find('.k2Container .componentheading h2').text(title || subtitle);
     $clone.find('.itemHeader h2.itemTitle').text(subtitle || title);
     $clone.find('.itemBody').html(content);
 
+    if($clone.attr('id') == 'photo-gallery') {
+        $clone.find('img').each(function() {
+            var $this = $(this);
+            var imgurl = $this.attr('src');
+            var stripped = imgurl.replace('.jpg','');
+            var src = stripped + 's.jpg';
+            $this.attr('src', src);
 
+            var $a = $('<a rel="{handler: \'image\'}" class="modal img shadow" href="'+imgurl+'"></a>');
+            $this.wrap($a);
+        });
 
+        $clone.find('.itemBody').append('<div class="clear">ciao</div>');
+    }
+
+    $clone.insertAfter($rtmain);
 
 
     var $ul = $('ul#left-menutop');
@@ -175,6 +188,7 @@ function LoadData(cb) {
                     menuFx: {duration:  300, transition: Fx.Transitions.Circ.easeOut},
                     pillFx: {duration:  400, transition: Fx.Transitions.Back.easeOut}
                 });
+            assignSqueeze();
 
             cb();
             LoadData.loaded = true;

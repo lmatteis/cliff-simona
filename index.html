@@ -60,10 +60,12 @@ body #rt-logo {width:240px;height:109px;}
   <script type="text/javascript">
 		window.addEvent('domready', function() {
 			SqueezeBox.initialize({});
+		});
+        function assignSqueeze() {
 			SqueezeBox.assign($$('a.modal'), {
 				parse: 'rel'
 			});
-		});
+        };
 var K2SitePath = 'http://livedemo00.template-help.com/joomla_40607/';
 var rokboxPath = 'http://livedemo00.template-help.com/joomla_40607/plugins/system/rokbox/';
 		if (typeof(RokBox) !== 'undefined') {
