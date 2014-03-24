@@ -89,7 +89,7 @@ function AddPage(page) {
         
         $clone.find('.itemBody p').each(function() {
             var $this = $(this);
-            $this.replaceWith('<p><a href="'+$this.text()+'" target="_blank" <img class="lazy" data-original="'+$this.text()+'" ></a></p>');
+            $this.replaceWith('<p><a href="'+$this.text()+'" target="_blank"><img class="lazy" data-original="'+$this.text()+'" ></a></p>');
         });
 
         $clone.find('.itemBody').append('<div class="clear">ciao</div>');
