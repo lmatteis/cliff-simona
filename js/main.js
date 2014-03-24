@@ -86,15 +86,10 @@ function AddPage(page) {
     $clone.find('.itemBody').html(content);
 
     if($clone.attr('id') == 'photo-gallery') {
-        $clone.find('img').each(function() {
+        
+        $clone.find('.itemBody p').each(function() {
             var $this = $(this);
-            var imgurl = $this.attr('src');
-            var stripped = imgurl.replace('.jpg','');
-            var src = stripped + 's.jpg';
-            $this.attr('src', src);
-
-            var $a = $('<a rel="{handler: \'image\'}" class="modal img shadow" href="'+imgurl+'"></a>');
-            $this.wrap($a);
+            $this.replaceWith('<p><a href="'+$this.text()+'" target="_blank" <img class="lazy" data-original="'+$this.text()+'" ></a></p>');
         });
 
         $clone.find('.itemBody').append('<div class="clear">ciao</div>');
@@ -176,6 +171,7 @@ function LoadData(cb) {
                     AddPage(page);
                 
             }
+            $('img.lazy').lazyload();
             new Fusion('ul.menutop', {
                     pill: 0,
                     effect: 'slide and fade',
